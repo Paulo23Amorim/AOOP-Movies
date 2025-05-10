@@ -6,7 +6,7 @@ export default function MovieDetails() {
   const [data, setData] = useState({ movie: {}, comments: [] });
 
   useEffect(() => {
-    fetch(`/api/movies/${id}`)
+    fetch(`https://aoop-movies.onrender.com/api/movies/${id}`)
       .then(res => res.json())
       .then(setData);
   }, [id]);
