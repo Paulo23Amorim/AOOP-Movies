@@ -5,7 +5,7 @@ export default function MovieList() {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
-    fetch('/api/movies')
+    fetch("https://aoop-movies.onrender.com/api/movies")
       .then(res => res.json())
       .then(data => setMovies(data));
   }, []);
